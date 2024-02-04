@@ -1,0 +1,65 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="score">
+                    <p id="home-score">0</p>
+                </div>
+                <div id="home-fouls" class="fouls">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="home-buttons" class="score-changer">
+                    <button id="plus-one-home" class="score-btn" onclick="homePlusOne()">+1</button>
+                    <button id="plus-two-home" class="score-btn" onclick="homePlusTwo()">+2</button>
+                    <button id="plus-three-home" class="score-btn" onclick="homePlusThree()">+3</button>
+                </div>
+                <button id="home-foul" class="foul-btn" onclick="newHomeFoul()">FOUL</button>
+            </div>
+            <div id="middle-section">
+                <div id="period">
+                    <h4>PERIOD</h4>
+                    <p>1</p>
+                </div>
+                <!--
+                <div id="timer">
+                    <p>12:00</p>
+                </div>
+                -->
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score">
+                    <p id="guest-score">0</p>
+                </div>
+                <div id="guest-fouls" class="fouls">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div id="guest-buttons" class="score-changer">
+                    <button id="plus-one-guest" class="score-btn" onclick="guestPlusOne()">+1</button>
+                    <button id="plus-two-guest" class="score-btn" onclick="guestPlusTwo()">+2</button>
+                    <button id="plus-three-guest" class="score-btn" onclick="guestPlusThree()">+3</button>
+                </div>
+                <button id="guest-foul" class="foul-btn" onclick="newGuestFoul()">FOUL</button>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="new-game" class="control-btn" onclick="newGame()">NEW GAME</button>
+            <!--
+            <button id="time-control" class="control-btn" onclick="startTimer">START TIMER</button>
+            -->
+            <button id="new-period" class="control-btn" onclick="newPeriod()">NEW PERIOD</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

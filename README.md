@@ -1,4 +1,9 @@
-# coeb546d5a3352e94db016c71
+# Scrimba Basketball Scoreboard
+
+Pending points:
+- Work on responsiveness, mainly changing layout for mobile
+- Add timer (already in the code, need to uncomment it and to add logic via JS)
+
 
 Quick start:
 
